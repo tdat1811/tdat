@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Cafe Menu</title>
+    <meta name="23691591" content="Nguyen Tien Dat">
+    <style>
+        .title {
+            color: rgb(154, 58, 58);
+    text-align: center;
+    text-shadow: 4px 20px 12px rgb(154, 58, 58);
+    font-style: italic;
+    font-size : 40px;
+        }
+
+        .nav {
+            color: purple;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            
+            color: maroon;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .highlight {
+            color: orange;
+            text-transform: uppercase;
+        }
+
+        .vegetarian {
+            color: red;
+            text-decoration: none;
+        }
+        .Desserts,
+        .Starter{
+            height: 50px;
+            font-size: 35px;
+            background-color: beige;
+        }
+        .back-top {
+            color: red;
+            text-decoration: none;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+        }
+        .task{
+            display: flex
+;
+    height: 30px;
+    background-color: pink;
+    padding: 20px 250px;
+    font-size: 25px;
+    
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">EXAMPLE CAFE MENU</div>
+   
+    <div class="task">
+        <div class="navbar-container">
+        <img src="icons8-home-50.png" alt="">
+        <span>|     Starter |    </span>
+        <span>Main Courses |    </span>
+        <span>Desserts |    </span>
+        
+            <input type="text">
+            <input type="submit" value="Go">
+        
+        
+        </div>
+        
+    </div>
+
+
+
+    <div class="section-title">
+        <div class = "Starter">
+            Starter
+        </div>
+    </div>
+    <ul>
+        <li>Chesnut and Mushroom Goujons <a href="#" class="vegetarian">(v)</a></li>
+        <li>Goat Cheese <a href="#" class="vegetarian">(v)</a></li>
+        <li><span class="highlight">HONEY SOY CHICKEN KEBABS</span> <a href="#" class="vegetarian">(v)</a></li>
+        <li>Seafood Salad <a href="#" class="vegetarian">(v)</a></li>
+    </ul>
+    <a href="#title" class="" style="color: red;">Back to Top</a>
+
+    <div class="section-title">
+        <div class="Desserts">Desserts</div>
+    </div>
+    <ul>
+        <li>Lemon Sorbet <a href="#" class="vegetarian">(v)</a></li>
+        <li>Chocolate Mud Pie <a href="#" class="vegetarian">(v)</a></li>
+        <li>Pecan Pie <a href="#" class="vegetarian">(v)</a></li>
+        <li>Selection of fine Cheeses from Around the World <a href="#" class="vegetarian">(v)</a></li>
+    </ul>
+    <a href="#title" class="" style="color: red;">Back to Top</a>
+</body>
+</html>

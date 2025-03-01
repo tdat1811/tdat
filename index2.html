@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name = "23691591" content="Nguyen Tien Dat    ">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   <style>
+          .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 250px;
+            grid-template-areas:
+                "header header header"
+                "left middle right"
+                "footer footer footer";
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+        
+        .header {
+            grid-area: header;
+            background-color: white;
+            
+        }
+
+        .left {
+            grid-area: left;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            width: 200px;
+        }  
+        .middle {
+            display : flex;
+            grid-area: middle;
+            padding: 20px;
+            text-align: center;
+            justify-content: left;
+            flex-direction: column; 
+            
+        }
+        .right {
+            grid-area: right;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            width: 300px;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: rgb(235, 139, 155);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .Title{
+            color : brown;
+            font-size : 40px;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .start{
+            display : flex;
+            height: 30px;
+            background-color: pink;
+            padding : 20px  250px;
+            font-size : 25px;
+            
+        }
+        .start-title{
+            display : flex;
+            gap : 70px;
+            align-items: center;   
+                     
+        }
+        .information,
+        .Desserts,
+        .Starter{
+            width: 500px;
+            height: 30px;
+            background-color: pink;
+            text-align: center;
+            font-size : 24px;
+            margin-left : 200px;
+            gap : 10px;
+        }
+        .Desserts-list,
+        .Starter-list{
+            font-size: 20px;
+            width: 500px;
+            text-align: left;
+        }
+        .left span{
+            text-indent: 15px;
+            display: flex;
+            height: 20xp;
+            width: 200px;
+            background : pink;
+            border-radius: 15px;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class ="Title">
+               <i>EXAMPLE CAFE MENU</i>
+            </div>
+            <div class="start">
+                <div class="navbar-container">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                <span>Starter</span>
+                <span>Main Courses</span>
+                <span>Desserts</span>
+                <div class="search-box">
+                    <input type="text">
+                    <input type="submit" value="Go" style="margin-left : - 90px;">
+                </div>
+                
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="left"> 
+            <span>Cafe Latte</span> <br>
+            <span>Espresso</span> <br>
+            <span>Green Tea</span> <br>
+            <span>Ice Cream Cake</span><br>
+            <span>Herbal Drinks</span><br>
+            <img src="company.png" alt="" style="width: 100%;">
+        </div>
+
+        <div class="middle">
+            <div class = "Starter">
+                <span><strong style="color :rgb(81, 57, 34)">S t a r t e r </strong></span>
+            </div>
+            
+            <div class="Starter-list">
+                <ul>
+                    <li>Chesnut and Mushroom Goujons <a href="" style="color:red">(v)</a></li>
+                    
+                    <li>Goat Cheese <a href="" style="color:red">(v)</a></li>
+                    <li style="color :rgb(229, 154, 41)"><strong>HONEY SOY CHICKEN KEBABS</strong><a href="" style="color:red">(v)</a></li>
+                    <li>Seafood Salad<a href="" style="color:red">(v)</a></li>
+                </ul>
+                <a href="#start" style="color : red;font-size : 20px;margin-left: 20px;">Back To Top</a>
+                
+            </div>
+            
+            <div class="Desserts" >
+                <span><strong style="color :rgb(81, 57, 34)">D E S S E R T S</strong></span>
+
+            </div>
+    <div class="Desserts-list">
+        <ul>
+            <li>Lemon Sorbet<a href="" style="color:red">(v)</a></li>
+            <li>Chocolate Mud Pie<a href="" style="color:red">(v)</a></li>
+            <li>Pecan Pie<a href="" style="color:red">(v)</a></li>
+            <li>Selection of fine Cheeses from Around the World<a href="" style="color:red">(v)</a></li>
+        </ul>
+        <a href="#start" style="color : red;font-size : 20px;margin-left: 20px;">Back To Top</a>
+
+         </div>
+            
+         <div class="information">
+            <span><strong style="color :rgb(81, 57, 34)">I N F O R M A T I O N </strong></span>
+            
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <br>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Telephone">
+                <br>
+                <select name="" id="">
+                    <option value="">USA</option>
+                    <option value="">Viet Nam</option>
+                </select>
+                
+                <input type="radio" name="check" id="" >Vietnamese
+                <input type="radio" name="check" id="">Foreign
+                <br>
+                <textarea  id="" placeholder="comment" rows="5" cols="100"></textarea>
+                <br>
+                <input type="submit" name="" id="">
+                <input type="button" name="" id="" value="Cancel">
+
+            </form>
+         </div>
+        </div>
+
+        <div class="right">
+            <h1 style="margin-bottom: 50px;">Event</h1> 
+            <h3 style="margin-left : 20px">Regular Meetings</h3>
+            <img src="meeting.png" alt="" style="width: 100%;"><br>
+            Host your regular team meetings or activities in the comfort of your own private room. Charge up on Kith's aromatic coffee and delectable dishes for that extra boost in your work! 
+            <h3>Product Launches</h3>
+            <img src="launch.png" alt="" style="width: 100%;"><br>
+            Launch your product with ease in a space that truly fits its image. Create an unforgettable experience for your guests with our spacious outlets! Whether you want to host an intimate celebration or launch an event for hundreds of guests, Kith's space is customisable to your needs
+        </div>
+        <div class="footer">
+            <h1>ABC Company - 12345678 - abccoffee@gmail.com</h1>
+        </div>
+    </div>
+</body>
+</html>
